@@ -150,13 +150,13 @@ const Dashboard: React.FC = () => {
 
         const data = [
             {
-                name: "Entradas",
+                name: "Mensalidades",
                 value: totalGains,
                 percent: percentGains ? percentGains : 0, 
                 color: '#E44C4E'
             },
             {
-                name: "Saídas",
+                name: "Cashback Investido",
                 value: totalExpenses,
                 percent: percentExpenses ? percentExpenses : 0, 
                 color: '#F7931B'
@@ -341,7 +341,7 @@ const Dashboard: React.FC = () => {
 
             <Content>
                 <WalletBox 
-                    title="saldo"
+                    title="Cashback Disponível"
                     color="#4E41F0"
                     amount={totalBalance}
                     footerlabel="atualizado com base nas entradas e saídas"
@@ -349,7 +349,7 @@ const Dashboard: React.FC = () => {
                 />
 
                 <WalletBox 
-                    title="entradas"
+                    title="Mensalidades Pagas"
                     color="#F7931B"
                     amount={totalGains}
                     footerlabel="atualizado com base nas entradas e saídas"
@@ -357,7 +357,7 @@ const Dashboard: React.FC = () => {
                 />
 
                 <WalletBox 
-                    title="saídas"
+                    title="Cashback Investido"
                     color="#E44C4E"
                     amount={totalExpenses}
                     footerlabel="atualizado com base nas entradas e saídas"
